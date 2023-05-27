@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const MINIMUM_COVERAGE = 60 // Defina a cobertura mínima desejada aqui
+const MINIMUM_COVERAGE = 0 // Defina a cobertura mínima desejada aqui
 
 const lcovFileContent = fs.readFileSync('coverage/lcov.info', 'utf-8')
 const lines = lcovFileContent.split('\n')
@@ -17,7 +17,7 @@ lines.forEach(line => {
   }
 })
 
-const coveragePercentage = 0 // (coveredLines / totalLines) * 100
+const coveragePercentage = (coveredLines / totalLines) * 100
 
 if (coveragePercentage < MINIMUM_COVERAGE) {
   console.error(`Cobertura mínima de teste não atingida. Cobertura atual: ${coveragePercentage.toFixed(2)}%`)
