@@ -17,7 +17,7 @@ lines.forEach(line => {
   }
 })
 
-const coveragePercentage = (coveredLines / totalLines) * 100
+const coveragePercentage = 0 // (coveredLines / totalLines) * 100
 
 if (coveragePercentage < MINIMUM_COVERAGE) {
   console.error(`Cobertura mínima de teste não atingida. Cobertura atual: ${coveragePercentage.toFixed(2)}%`)
