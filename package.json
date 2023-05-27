@@ -2,6 +2,7 @@
     "name": "node-boilerplate",
     "version": "0.0.1",
     "scripts": {
+        "build": "npm run clean && tsc -p tsconfig-build.json",
         "lint": "eslint .",
         "lint:fix": "npm run lint -- --fix",
         "test": "jest --passWithNoTests --no-cache --runInBand",
