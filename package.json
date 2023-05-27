@@ -1,4 +1,7 @@
 {
     "name": "node-boilerplate",
-    "version": "0.0.1"
+    "version": "0.0.1",
+    "devDependencies": {
+        "git-commit-msg-linter": "^5.0.4"
+    }
 }
