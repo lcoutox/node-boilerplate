@@ -7,7 +7,8 @@
         "test": "jest --passWithNoTests --no-cache --runInBand",
         "test:watch": "npm t -- --watch",
         "test:staged": "npm t -- --findRelatedTests",
-        "test:coverage": "npm t -- --coverage"
+        "test:coverage": "npm t -- --coverage",
+        "prepare": "husky install"
     },
     "devDependencies": {
         "@types/jest": "^29.5.1",
@@ -19,6 +20,7 @@
         "jest-mock-extended": "^3.0.4",
         "lint-staged": "^13.2.2",
         "ts-jest": "^29.1.0",
-        "typescript": "^5.0.4"
+        "typescript": "^5.0.4",
+        "husky": "^8.0.0"
     }
 }
