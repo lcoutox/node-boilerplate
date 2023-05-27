@@ -12,6 +12,7 @@
         "test:watch": "npm t -- --watch",
         "test:staged": "npm t -- --findRelatedTests",
         "test:coverage": "npm t -- --coverage",
+        "coverage:validate": "node validate-coverage.js",
         "prepare": "husky install"
     },
     "devDependencies": {
